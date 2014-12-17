@@ -34,8 +34,7 @@
   , show: function () {
       var that = this
 
-      that.element.parent().prepend(that.element.detach().hide())
-      that.element
+      that.element.hide()
         .wrap($('<div class="tags">'))
         .parent()
         .on('click', function () {
